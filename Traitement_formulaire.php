@@ -14,7 +14,8 @@
     
     $mavariable = 0 ;
     $mavariable = $mavariable + 3;
-    echo $mavariable."\n" ; 
+    echo $mavariable."\n" ;
+     
     ?>
 
 </body>
