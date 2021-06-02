@@ -1,0 +1,12 @@
+
+Produit ( IDproduit,#idcategorie, titre, ref, prix, photo,descrip)
+
+paniers( IDPanier,#idClient ,  date ) 
+etre_dans(#idproduit,#idpanier,quantité)
+
+
+
+categorie(IDcategory, nom, description) 
+
+
+client ( IDClient,nom, prénom, mail, adresse, mdp , login) 
