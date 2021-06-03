@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-inverse" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -16,10 +15,13 @@
         <ul class="nav navbar-nav">
             <li><a href="?page=edit&idp=1">Edit Produit 1</a></li>
             <li><a href="?page=new">Nouveau Produit</a></li>
+            <li><a href="?page=Produit&idp=1">Produit 1 </a></li>
+            <li><a href="?page=Listeproduit">Liste produit</a></li>
         </ul>
-        <form class="navbar-form navbar-left" role="search">
+        <form class="navbar-form navbar-left" role="search" methode="GET">
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
+                <input type="hidden" name="page" value= "Listeproduit">
+                <input type="text" value="<?= isset($_GET["search"])? $_GET["search"]: "";?>" class="form-control" placeholder="Search" name="search">
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
         </form>
@@ -28,7 +30,7 @@
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
+                    <li><a href="?page=Panier">Panier</a></li>
                     <li><a href="#">Another action</a></li>
                     <li><a href="#">Something else here</a></li>
                     <li><a href="#">Separated link</a></li>
