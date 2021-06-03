@@ -8,7 +8,7 @@
 };?>
 
 <h1>Liste des produits</h1>
-<table class="list-produit">
+<table class="item-produit">
     <?php
      for ($i=0; $i <count($listeProduits) ; $i++) { 
          $unProduitbyitterationList=$listeProduits[$i] ; 
