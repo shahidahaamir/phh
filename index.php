@@ -13,6 +13,22 @@
         include_once ('include/navbar.php') ; 
         include_once ('dispatch.php') ; 
     ?>
+     <script>
+        document.querySelector("nav form input[name=search]")
+            .addEventListener('change',function(evt){
+                if(evt.target.value.length<=1){
+                    document.querySelector('#completion-container').style.display='none';
+                    return;
+                }
+                fetch('http://localhost/php/autocomplete.php?search='+evt.target.value)
+                    .then(e=>e.text())
+                    .then(t=>{
+                        document.querySelector('#completion-container').innerHTML=t;
+                        document.querySelector('#completion-container').style.display='block';
+                    });
+                }
+            );
+    </script>
 </body>
 
 <!-- Latest compiled and minified CSS & JS -->

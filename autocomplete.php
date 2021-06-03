@@ -5,7 +5,7 @@
     }
 </style>
 <?php 
-    include_once('sqlfunctions.php');
+    include_once('sqlfunction.php');
     $mesprods=getSqlProduits($_GET["search"]);
 ?>
 <table id="auto-complet">
