@@ -1,6 +1,6 @@
 <?php
     include_once ('sqlfunction.php') ; 
-    $listeProduits =getSqlProduits(isset($_GET["search"])?$_GET["search"]:false);
+    $listeProduits =getSqlProduit(isset($_GET["search"])?$_GET["search"]:false);
     
 ?>
 <?php if(isset($_GET["search"]) && strlen($_GET["search"])>0){

@@ -23,7 +23,7 @@
                 <input type="hidden" name="page" value= "Listeproduit">
                 <input type="text" value="<?= isset($_GET["search"])? $_GET["search"]: "";?>" class="form-control" placeholder="Search" name="search">
             </div>
-            <div id="completion-container" style="border:1px solid black;background-color:skyblue; position:fixed;left:44.3%;height:auto;min-height:50px;width:205px;"></div>
+            <div id="completion-container" style="display:none;border:1px solid black;background-color:skyblue; position:fixed;left:44.3%;height:auto;min-height:50px;width:205px;"></div>
             <button type="submit" class="btn btn-default">Submit</button>
         </form>
         <ul class="nav navbar-nav navbar-right">
